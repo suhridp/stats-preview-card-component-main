@@ -1,0 +1,111 @@
+@font-face {
+    font-family: inter;
+    src: url(Inter-VariableFont_slnt\,wght.ttf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: inter;
+    /* border: 1px solid rgb(253, 241, 241); */
+    color: cornsilk;
+}
+main{
+    height: 95vh; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    background-color: hsl(233, 47%, 7%);
+}
+.box1, .box2{
+    
+    height: 16.5rem;
+    width: 21.2rem;
+    padding: 2.59rem;
+}
+.box1{
+    background-color:  hsl(244, 38%, 16%);
+    border-top-left-radius: .5rem;
+    border-bottom-left-radius: .5rem;
+}
+.box1 span{
+    color: hsl(277, 64%, 61%);
+}
+.box1 p{
+    margin-top: 1.5rem;
+    margin-bottom: 2rem;
+    font-size: .75rem;
+    line-height: 1.3rem;
+    color: hsla(0, 0%, 100%, 0.75);
+}
+.box2{
+    background-image: url(image-header-desktop.jpg);
+    background-size: contain;
+    border-top-right-radius: .5rem;
+    border-bottom-right-radius: .5rem ;
+}
+.bottom{
+    width: 19.2rem;
+    display: flex;
+    justify-content: space-between;
+}
+.bottom div{
+    font-size: .70rem;
+    color: hsla(0, 0%, 100%, 0.75);
+}
+.bottom span{
+    font-size: 1.4rem;
+    font-weight: 700;
+    line-height: 2rem;
+    color: hsl(0, 0%, 100%);
+}
+@media (max-width:800px) {
+    .box2{
+        background-image: url(image-header-mobile.jpg);
+        background-size: cover;
+    }  
+    main{
+    display: flex;
+    flex-direction: column-reverse;
+    flex-wrap: wrap;
+    height: 100%;
+    width: 100%;
+    }
+    .box1{
+        height: 27rem;
+        width: 220px;
+        text-align: center;
+        align-items: center;
+        padding: auto;
+        border-bottom-left-radius: 1rem;
+        border-bottom-right-radius: 1rem;
+        border-top-left-radius: 0rem;
+
+
+    }
+    .box2{
+        height:20.5vh;
+        width: 220px;
+        border-top-left-radius: 1rem;
+        border-top-right-radius: 1rem;
+        border-bottom-right-radius: 0rem ;
+    }
+    .box1 h1{
+        width: 15rem;
+        font-size: 1.6rem;
+        padding: 0;
+    }
+    .box1 p{
+        height:auto;
+        width: auto;
+        margin-left: .4rem;
+    }
+    .bottom{
+        width: auto;
+        height: 11rem;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+}
